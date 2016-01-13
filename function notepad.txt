@@ -1,0 +1,202 @@
+
+ select substr( name, instr(name, '/')+1) || ' ' ||
+   substr( name, 1, instr(name, '/')-1) as FullName from employee;
+
+select sysdate, next_day(sysdate,3) from dual;
+
+
+
+select sysdate, to_char(sysdate,'MM') from dual;
+
+
+
+
+select emp_id, name, title, bonus,
+decode(title, 'Salesperson',bonus+100,
+              'Senior Manager', bonus+200,
+               bonus) update_bonus
+       from employee;
+
+select substr(salary,3,2) || mod(salary,3) || substr(name,1,instr(name,'/')-1) 
+|| length(bonus) from employee; 
+ 
+select title, count(bonus), sum(bonus)
+ from employee group by title;
+
+select  title, count(bonus), sum(bonus)
+ from employee where bonus <=2500 group by title;
+
+select deptno, sum(sal), avg(sal)
+from emp where job != 'CLERK'
+   group by deptno 
+   having deptno != 30
+   order by deptno;
+
+
+select deptno, job
+from emp where  not (job = 'CLERK' or
+               deptno = 30);
+
+
+
+
+
+week 5 subqueries
+
+select * from emp 
+where deptno in ( select deptno from emp where ename = 'JONES')
+and ename != 'JONES';
+
+
+select * from emp 
+where sal > any (select sal from emp where job in ( 'CLERK', 'SALESMAN'))
+order by sal;
+
+select dept.deptno, emp.ename, dept.dname from emp, dept
+where dept.deptno = emp.deptno(+);
+
+
+select * from emp
+where sal > ( select avg(losal) from salgrade);
+
+select deptno, ename, job from emp
+where deptno = ( select deptno from dept where loc = 'NEW YORK');
+
+
+customer table
+custid PK
+custname
+custstreet
+custcity
+custstate
+custzip
+tankcapacity
+housetypecode
+
+create table customer(
+custid     varchar2(4),
+cname   varchar2(20),	
+street varchar2(15),	
+city    varchar2(15),	
+state   char(2),
+zip      CHAR(5),
+tankcapacity  number(5),	
+housetypecode  varchar(10));
+
+
+
+
+
+
+
+
+insert into customer values
+( '01', 'Stephen Jones', '2 State Street', 'Beantown', 'MA', '12345', 235, 'ranch');
+
+
+insert into customer values
+( '02', 'Stacy Brown', '4 High Street', 'Newtown', 'CA', '21345', 245, 'cape');
+
+
+insert into customer values
+( '03', 'John Smith', '10 New Street', 'Anytown', 'MI', '34567', 285, 'colonial');
+
+insert into customer values
+( '04', 'DAvid Manson', '15 Mark Street', 'Georgetown', 'MA', '32345', 235, 'ranch');
+
+
+insert into customer values
+( '05', 'Kimbell Jones', '65 East Street', 'Happytown', 'CA', '42345', 245, 'cape');
+
+insert into customer values
+( '06', 'Charles Wood', '34 State Street', 'Beantown', 'MA', '12345', 285, 'colonial');
+
+
+create table housetype
+         (housetypecode varchar2(10),
+         avgsum  number(3),
+        avgspr   number(3),
+      avgfall    number(3),
+      avgwin     number(3));
+
+
+insert into housetype values
+( 'ranch', 15, 12, 10, 5);
+
+insert into housetype values
+( 'cape', 18, 14, 9, 4);
+
+
+insert into housetype values
+( 'colonial', 25, 20, 11, 8);
+
+
+
+ create table delivery 
+(custid varchar2(4),
+deldate date,
+numgal  number(3),
+pricegal  number(2, 2));
+
+
+insert into delivery values
+( '02', '01-MAR-12', 15,3.45);
+
+
+insert into delivery values
+( '02', '14-JUN-12', 12, 3.35);
+
+
+insert into delivery values
+( '01', '01-DEC-13', 18, 3.85);
+
+
+insert into delivery values
+( '03', '25-JUL-13', 10, 3.25);
+
+
+insert into delivery values
+( '04', '28-OCT-12', 7, 3.35);
+
+insert into delivery values
+( '05', '16-MAR-12', 11, 3.45);
+
+insert into delivery values
+( '06', '14-FEB-12', 12, 3.55);
+
+insert into delivery values
+( '03', '01-MAR-14', 10, 3.35);
+
+
+
+
+
+
+select custid, numgal from delivery 
+where numgal * 2 > ( select min(avgfall) from housetype);
+
+
+
+select * from customer 
+where custid in ( select custid from customer where housetypecode = 'ranch' and
+state = 'MA');
+
+select * from customer 
+where custid in ( select custid from customer where housetypecode = 'ranch') 
+and
+custid in ( select custid from customer where state = 'MA');
+
+
+
+select c.custid from delivery d, customer c 
+where d.custid = c.custid group by c.custid having sum(numgal)>15; 
+
+select custid, cname, city from customer
+where custid in ( select custid from delivery group by custid having sum(numgal)>100);
+
+update housetype
+set avgsum = avgsum * 4, avgspr = avgspr * 5, avgfall = avgfall * 10, avgwin = avgwin * 40
+where housetypecode = 'colonial';
+
+update delivery
+set numgal = numgal * 4;

@@ -1,0 +1,42 @@
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.exe
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.pdb
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.xml
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.frmUpdate.resources
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.Resources.resources
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.exe
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.xml
+C:\Users\Pris\Documents\courses2008forward\CIS56\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.pdb
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.exe
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.xml
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.pdb
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.exe
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.pdb
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.xml
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.frmUpdate.resources
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.Resources.resources
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.read.1.tlog
+K:\VB2013\ADO\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.write.1.tlog
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.exe
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.xml
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.pdb
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.exe
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.pdb
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.xml
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.frmUpdate.resources
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.Resources.resources
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.read.1.tlog
+K:\VB2013\ADO\ADOadddeleteCode13\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.exe
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.xml
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.pdb
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.exe
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.pdb
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\bin\Debug\ADOadddeleteCodeS12.xml
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.frmUpdate.resources
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.Resources.resources
+C:\EktaWork\CIS159 Ex\ADOadddeleteCodeS12\ADOadddeleteCodeS12\ADOadddeleteCodeS12\obj\x86\Debug\ADOadddeleteCodeS12.vbproj.GenerateResource.Cache

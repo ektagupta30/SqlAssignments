@@ -1,0 +1,7 @@
+CIS120,Programming Logic
+CIS121,Operating Systems
+CIS122,Internet Developer
+CIS150,Oracle
+CIS159,PHP and MySQL
+CIS162,Applications for Web Development
+CIS283,Topics in Computer Info Systems

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Gather information</title>
+<script type="text/javascript">
+function formValidate(yourname,email)
+  {
+  if (yourname.value == "")
+     {
+      alert('The name is missing, please enter your name');
+      yourname.focus();
+      return false;
+     }
+  else
+     {
+     if (email.value == "")
+        {
+         alert('The email is missing, please enter your email');
+         email.focus()
+         return false;
+        }
+     else
+        {
+         return true;
+        }
+     }
+   }
+</script>
+</head>
+<body>
+<h1>Please fill out this form to give us your feedback!</h1>
+<p>Note on the next page we will deal with header() and location: Remember that header() must be called before any 
+actual output is sent, either by normal HTML tags, blank lines in a file, or from PHP. It is a very common error to 
+read code with include, or require, functions, or another file access function, and have spaces or empty lines that 
+are output before header() is called. The same problem exists when using a single PHP/HTML file.From the manual</p>
+<p>You can override this event by returning false in the event handler. Use this capability to validate data on the 
+client side to prevent invalid data from being submitted to the server. If the event handler is called by the 
+onsubmit attribute of the form object, the code must explicitly request the return value using the return function, 
+and the event handler must provide an explicit return value for each possible code path in the event handler function.</p>
+<form onSubmit="return formValidate(yourname,email);" method="get" action="mailinfofromformok.php" name="tocheck">
+  Name: <input name = "yourname" type = "text" /><br /><br />
+  Email: <input name="email" type="text" /><br /><br />
+  Comments:<br />
+  <textarea name="comments" rows="12" cols="40"></textarea><br />
+  <input type="submit" value="Submit"/>
+  <input type="reset" value="Clear" />
+</form>
+</body>
+</html>

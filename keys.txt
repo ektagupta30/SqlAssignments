@@ -1,0 +1,143 @@
+alter table customer
+add constraint custid_pk primary key(custid)
+
+alter table housetype
+add constraint house_code_pk primary key(housetypecode);
+
+alter table housetype
+add constraint house_code_ch check(housetypecode in('ranch', 'cape', 'colonial')); 
+
+
+alter table customer
+add constraint  HOUSETYPECODE_FK foreign key( HOUSETYPECODE) references housetype;
+
+SELECT TABLE_NAME, CONSTRAINT_NAME FROM USER_CONSTRAINTS
+where table_name in('CUSTOMER', 'HOUSETYPE', 'DELIVERY');
+
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = 'CUSTOMER';
+
+alter table delivery
+add constraint thekey_pk primary key(custid, deldate)
+
+alter table delivery
+add constraint cust_id_fk foreign key( CUSTID) references customer;
+
+
+
+create table emp_2 
+( empno  varchar2(3) constraint emp_pk primary key,
+ename varchar2(15),
+sal  number(7,2),
+tax_withheld number(5,2) as (sal * 0.30),
+medical_withheld number(4,2) as (sal * 0.01),
+misc_deductions number (4,2) as (sal * 0.02)); 
+
+
+insert into emp_2 (empno, ename, sal)
+select empno, ename, sal
+from emp;
+
+
+alter table emp_2
+modify tax_withheld number(7,2);
+
+
+alter table emp_2
+modify medical_withheld number(7,2);
+alter table emp_2
+modify misc_deductions number(7,2);
+
+
+create table project
+( proj_id varchar2(4) constraint proj_pk primary key,
+proj_name varchar2(15),
+proj_manager varchar2(15));
+
+
+insert into project
+values('p001', 'banking', 'varun');
+insert into project
+values('p002', 'loan', 'dave');
+insert into project
+values('p003', 'temperature', 'nick');
+insert into project
+values('p004', 'computing', 'jane');
+
+
+create table emp_project
+( empno varchar2(4) constraint emp_fk references emp_2,
+  proj_id varchar2(4) constraint proj_fk references project,
+ date_worked date,
+ hours_worked number(3,0));
+
+
+SELECT TABLE_NAME, CONSTRAINT_NAME FROM USER_CONSTRAINTS
+where table_name in('EMP_2', 'PROJECT', 'EMP_PROJECT');
+
+SELECT TABLE_NAME, CONSTRAINT_NAME FROM USER_CONSTRAINTS
+where table_name in('EMP_2', 'PROJECT', 'EMP_PROJECT');
+
+alter table EMP_PROJECT
+add constraint emp_proj_date_pk primary key(empno, proj_id, date_worked);
+
+insert into emp_project
+values( '01', 'p003', '06-JAN-13', 5);
+
+
+insert into emp_project
+values( '01', 'p003', '08-JAN-13', 4);
+
+insert into emp_project
+values( '07', 'p001', '06-MAR-12', 3);
+
+insert into emp_project
+values( '07', 'p003', '09-FEB-13', 2);
+
+insert into emp_project
+values( '03', 'p002', '21-JUN-11', 6);
+
+insert into emp_project
+values( '02', 'p004', '16-NOV-13', 3);
+insert into emp_project
+values( '04', 'p002', '26-DEC-12', 4);
+insert into emp_project
+values( '02', 'p004', '20-AUG-13', 2);
+insert into emp_project
+values( '03', 'p001', '26-JUL-13', 3);
+
+
+
+SELECT TABLE_NAME, CONSTRAINT_NAME, INDEX_NAME FROM USER_CONSTRAINTS
+where table_name in('EMP_2', 'PROJECT', 'EMP_PROJECT');
+
+
+
+
+
+set verify off
+ set serveroutput on
+declare
+e_id    CHAR(4)
+e_name   VARCHAR2(30);
+e_title   VARCHAR2(20);
+e_salary   NUMBER(12);
+e_bonus   NUMBER(4);
+begin
+
+select EMP_ID, name, title, salary, bonus into
+e_id, e_name, e_title, e_salary, e_bonus
+from employee_bk;
+if e_title = 'Salesperson ' then
+e_salary := e_salary + 1000;
+end if;
+update employee_bk
+set salary = e_salary
+end
+dbms_output.put_line(e_id ||' ' || e_name || ' ' || e_title || ' ' || e_salary ||
+ ' '|| e_bonus);
+end;
+/
+set serverout off
+set verify on
+
+

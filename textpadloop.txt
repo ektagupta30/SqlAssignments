@@ -1,0 +1,78 @@
+set serveroutput on
+ declare
+ v_recno  number(4);
+ ctr_no   number(2) := 0;
+ begin 
+  while ctr_no < 6 loop 
+ ctr_no := ctr_no + 1;
+ v_recno := ctr_no + ctr_no;
+ dbms_output.put_line(ctr_no||'+'|| ctr_no || '='|| v_recno );
+  end loop;
+ end;
+ /
+ set serveroutput off 
+ 
+ set serveroutput on
+  declare
+  v_recno  number(4) := 1;
+  ctr_no   number(2) := 0;
+ total    number(2) := 0;
+  begin 
+   while v_recno <= 4 loop
+   for i in 1..4 loop
+   ctr_no := ctr_no + 1;
+   total := ctr_no + v_recno;
+   dbms_output.put_line(v_recno||'+'|| ctr_no || '='|| total );
+   end loop;
+   v_recno := v_recno + 1;
+   ctr_no  := 0;
+   end loop;
+  end;
+  /
+ set serveroutput off 
+ 
+ PROBLEM 4   
+ set serveroutput on
+   declare
+   recno  number(4) := 1;
+   ctr_no   number(2) := 0;
+  total    number(2) := 0;
+   begin 
+    while recno <= 4 loop
+    while ctr_no < 4 loop
+    ctr_no := ctr_no + 1;
+    total := recno + ctr_no;
+    dbms_output.put_line(recno||'+'|| ctr_no || '='|| total );
+    end loop;
+    recno := recno + 1;
+    ctr_no  := 0;
+    end loop;
+   end;
+   /
+ set serveroutput off 
+ 
+PROBLEM ##5
+set serveroutput on
+  declare
+  recno  number(4) := 1;
+  ctr_no   number(2) := 0;
+ total    number(2) := 0;
+  begin 
+    loop
+    loop
+   ctr_no := ctr_no + 1;
+   total := recno + ctr_no;
+   if ctr_no > 4 then
+   exit;
+   end if;
+   dbms_output.put_line(recno||'+'|| ctr_no || '='|| total );
+   end loop;
+   recno := recno + 1;
+   ctr_no  := 0;
+   if recno > 4 then
+   exit;
+   end if;
+   end loop;
+  end;
+  /
+ set serveroutput off  

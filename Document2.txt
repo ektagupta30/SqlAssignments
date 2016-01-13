@@ -1,0 +1,77 @@
+/*create table student
+( studentid  varchar2(2),
+ studentname  varchar(20),
+ MAJORCODE    varchar2(2),
+ optioncode  varchar2(2),
+ numcredits   number(4,2),
+ formsub  varchar2(2),
+ gpa  number(4,2),
+ gradstatus varchar2(2));
+ 
+ 
+ create table gradstatus
+ (studentid   varchar2(2),
+ honor_level  varchar2(30));
+ 
+ insert into student
+ values('01', 'Elise','CI','NT', 43, 'Y', 3.1, 'N');
+ insert into student
+ values('02', 'Nick','BU','PA', 41, 'N', 3.1, 'N');
+ insert into student
+ values('03', 'Keema','CI','NT', 50, 'Y', 3.8, 'Y');
+ insert into student
+ values('04', 'Garvy','CI','WD', 47, 'N', 3.6, 'Y');
+ insert into student
+ values('05', 'Aryana','BU','NT', 45, 'N', 3.15, 'N');
+ insert into student
+ values('06', 'Norman','CI','PA', 40, 'N', 3.0, 'Y');
+ insert into student
+ values('07', 'Dev','BU','NT', 70, 'Y', 4.1, 'Y');
+ insert into student
+ values('08', 'Arnav','CI','WD', 60, 'Y', 4.0, 'Y');
+ insert into student
+ values('09', 'Varun','CI','NT', 68, 'Y', 4.4, 'Y');
+ insert into student
+ values('10', 'Ella','BU','NT', 48, 'N', 3.4, 'N');
+ 
+ 
+ 
+insert into gradstatus
+values('01','');
+insert into gradstatus
+values('02','');
+insert into gradstatus
+values('03','');
+insert into gradstatus
+values('04','');
+insert into gradstatus
+values('05','');
+insert into gradstatus
+values('06','');
+insert into gradstatus
+values('07','');
+insert into gradstatus
+values('08','');
+insert into gradstatus
+values('09','');
+insert into gradstatus
+values('10','');
+
+
+create table major
+(majorcode varchar2(2),
+majorname varchar2(15),
+advisor varchar2(15));
+
+create table statistics
+(majorcode varchar2(2),
+numstudents  number(4),
+numcredits  number(5,2));
+ 
+ insert into major
+ values( 'CI', 'Computer', 'Smith');
+ 
+ insert into major
+  values( 'BU', 'Business', 'Henry');
+  
+ 
